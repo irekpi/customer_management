@@ -1,0 +1,32 @@
+
+ Packages
+*.egg
+*.egg-info
+dist
+build
+eggs
+parts
+bin
+var
+sdist
+develop-eggs
+.installed.cfg
+lib
+lib64
+__pycache__
+
+# SQLite databases
+*.sqlite
+
+# Virtual environment
+venv
+
+# Environment files
+.env
+.env-mysql
+db.sqlite3
+venv
+venv/
+.idea
+.idea/
+__pycache__/
