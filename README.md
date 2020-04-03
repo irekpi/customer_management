@@ -1,6 +1,6 @@
 # Customer Management
 
-Cus_Man
+Cus_Mana
     
     The main idea behind project is to create fully functioning Customer Managment Platform.
     App stores customer informations in DataBase.
@@ -13,3 +13,5 @@ Requirements are attached to the repo.
 <br>
 
 Repo in progress (more info and features will be shown in here)
+
+

@@ -9,6 +9,7 @@
             <div class="card card-body">
                 <form action="" method="POST">
                     {% csrf_token %}
+                    {{ form.management_form }}
                     {{ form.as_p }}
                     <input type="submit" value="Submit">
                 </form>
