@@ -1,0 +1,34 @@
+{%  extends 'accounts/base.html' %}
+{% load static %}
+{% block content %}
+{%  include 'accounts/status.html' %}
+    <br>
+    <div class="row">
+        <div class="col-md">
+            <div class="card card-body">
+                <table class="table table-sm">
+                    <tr>
+                        <th>Product</th>
+                        <th>Category</th>
+                        <th>Note</th>
+                        <th>Order Date</th>
+                        <th>Status</th>
+
+                    </tr>
+                    {% for order in orders %}
+                        <tr>
+                            <td>{{ order.product.name }}</td>
+                            <td>{{ order.product.category }}</td>
+                            <td>{{ order.note }}</td></th>
+                            <td>{{ order.date_created }}</td>
+                            <td>{{ order.status }}</td>
+                        </tr>
+                    {% endfor %}
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="card card-body" style="width: 300px"  >
+        <a class="btn btn-primary" href="{% url 'accounts:create_order' user.customer.id %}">Create order</a>
+    </div>
+{% endblock content %}
