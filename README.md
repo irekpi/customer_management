@@ -21,9 +21,9 @@ Cus_Mana
 Requirements are attached to the repo.
 <br>
 Repo in progress (more info and features will be shown in here)
-<br>
 
-###Building
+
+### Building
 
 Python virtualenv commands:
     
